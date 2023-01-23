@@ -1,0 +1,556 @@
+{
+	"info": {
+		"_postman_id": "37816708-b863-4913-8e25-0dee995b911d",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Schools",
+			"item": [
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "[admin] Create Schools",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "British School",
+											"description": "required min:1 max 255 | string ",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{adminUrl}}schools"
+							},
+							"response": [
+								{
+									"name": "[admin] Create Schools",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "British School",
+													"description": "required min:1 max 255 | string ",
+													"type": "text"
+												}
+											]
+										},
+										"url": "{{adminUrl}}schools"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:11:19 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:11:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.22"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"success\": true,\n            \"record\": {\n                \"id\": 3,\n                \"name\": \"British School\",\n                \"created_at\": \"2022-07-25T21:11:18.000000Z\",\n                \"updated_at\": \"2022-07-25T21:11:18.000000Z\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "[admin] Update Schools",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "مدرسه الصديق",
+											"description": "required min:1 max 255 | string ",
+											"type": "text"
+										}
+									]
+								},
+								"url": "{{adminUrl}}schools/2"
+							},
+							"response": [
+								{
+									"name": "[admin] Update Schools",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "name",
+													"value": "مدرسه الصديق",
+													"description": "required min:1 max 255 | string ",
+													"type": "text"
+												}
+											]
+										},
+										"url": "{{adminUrl}}schools/2"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:13:09 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:13:09 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.22"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "55"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"success\": true,\n            \"record\": {\n                \"id\": 2,\n                \"name\": \"مدرسه الصديق\",\n                \"created_at\": \"2022-07-25T21:11:04.000000Z\",\n                \"updated_at\": \"2022-07-25T21:13:08.000000Z\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "[admin] List Schools",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{adminUrl}}schools"
+							},
+							"response": [
+								{
+									"name": "[admin] List Schools",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{adminUrl}}schools"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:12:46 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:12:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.22"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"American School\",\n            \"created_at\": \"2022-07-25T21:10:52.000000Z\",\n            \"updated_at\": \"2022-07-25T21:10:52.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"European schools\",\n            \"created_at\": \"2022-07-25T21:11:04.000000Z\",\n            \"updated_at\": \"2022-07-25T21:11:04.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"British School\",\n            \"created_at\": \"2022-07-25T21:11:18.000000Z\",\n            \"updated_at\": \"2022-07-25T21:11:18.000000Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "[admin] Get Schools",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{adminUrl}}schools/1"
+							},
+							"response": [
+								{
+									"name": "[admin] Get Schools",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{adminUrl}}schools/1"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:12:54 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:12:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.22"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"success\": true,\n            \"record\": {\n                \"id\": 1,\n                \"name\": \"American School\",\n                \"created_at\": \"2022-07-25T21:10:52.000000Z\",\n                \"updated_at\": \"2022-07-25T21:10:52.000000Z\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "[admin] Delete Schools",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{adminUrl}}schools/3"
+							},
+							"response": [
+								{
+									"name": "[admin] Delete Schools",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": "{{adminUrl}}schools/3"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:13:01 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:13:01 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.22"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "56"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"success\": true\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Site",
+					"item": [
+						{
+							"name": "[Site] List Schools",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}schools"
+							},
+							"response": [
+								{
+									"name": "[Site] List Schools",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{baseUrl}}schools"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:13:42 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:13:42 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.22"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "54"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"American School\",\n            \"created_at\": \"2022-07-25T21:10:52.000000Z\",\n            \"updated_at\": \"2022-07-25T21:10:52.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"مدرسه الصديق\",\n            \"created_at\": \"2022-07-25T21:11:04.000000Z\",\n            \"updated_at\": \"2022-07-25T21:13:08.000000Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "[Site] Get Schools",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseUrl}}schools/1"
+							},
+							"response": [
+								{
+									"name": "[Site] Get Schools",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{baseUrl}}schools/1"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:13:57 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Jul 2022 21:13:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/7.4.22"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"success\": true,\n            \"record\": {\n                \"id\": 1,\n                \"name\": \"American School\",\n                \"created_at\": \"2022-07-25T21:10:52.000000Z\",\n                \"updated_at\": \"2022-07-25T21:10:52.000000Z\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "adminUrl",
+			"value": "http://127.0.0.1:8000/api/admin/",
+			"type": "string"
+		},
+		{
+			"key": "baseUrl",
+			"value": "http://127.0.0.1:8000/api/",
+			"type": "string"
+		}
+	]
+}
